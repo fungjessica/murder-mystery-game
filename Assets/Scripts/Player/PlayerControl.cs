@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
-    public float speed;
-    Rigidbody2D rb;
+    [SerializeField] private float speed;
+    private Rigidbody2D rb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

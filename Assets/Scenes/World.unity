@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf8c7bd1780e5764586c135c11bf7ee7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1854321989}
+  target: {fileID: 1854321989}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,7 +483,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
