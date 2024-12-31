@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class MainMenuControl : MonoBehaviour
 {
     public void Play() {
         SceneManager.LoadSceneAsync("World");

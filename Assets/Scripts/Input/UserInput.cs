@@ -12,12 +12,14 @@ public class UserInput : MonoBehaviour
     public bool downReleased { get; private set; }
     public bool leftReleased { get; private set; }
     public bool rightReleased { get; private set; }
+    public bool pausePressed { get; private set; }
 
     private PlayerInput playerInput;
     private InputAction upAction;
     private InputAction downAction;
     private InputAction leftAction;
     private InputAction rightAction;
+    private InputAction pauseAction;
 
     // Called before Start()
     private void Awake() {
@@ -31,6 +33,7 @@ public class UserInput : MonoBehaviour
         downAction = playerInput.actions["Down"];
         leftAction = playerInput.actions["Left"];
         rightAction = playerInput.actions["Right"];
+        pauseAction = playerInput.actions["Pause"];
     }
 
     // Update is called once per frame
@@ -44,5 +47,6 @@ public class UserInput : MonoBehaviour
         downReleased = downAction.WasReleasedThisFrame();
         leftReleased = leftAction.WasReleasedThisFrame();
         rightReleased = rightAction.WasReleasedThisFrame();
+        pausePressed = pauseAction.WasPressedThisFrame();
     }
 }
